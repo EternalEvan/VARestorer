@@ -2,6 +2,16 @@
 
 <div align="center">
   <img src="./assets/logo.png" alt="VARestorer Logo" width="400"/>
+  <h3 style="margin-top: 0;">
+    📄
+    [<a href="https://openreview.net/pdf?id=T2Oihh7zN8" target="_blank">Paper</a>]
+    &nbsp;&nbsp;
+    🏠
+    [<a href="https://eternalevan.github.io/VARestorer-project/" target="_blank">Project Page</a>]
+    &nbsp;&nbsp;
+    🤗
+    [<a href="https://huggingface.co/EternalEvan/VARestorer" target="_blank">Huggingface</a>]
+</h3>
 </div>
 
 <div align="center">
@@ -12,8 +22,6 @@
 
 Tsinghua University
 </div>
-
-[**[Paper]**](https://openreview.net/pdf?id=T2Oihh7zN8)
 
 The repository contains the official implementation for the paper "VARestorer: One-Step VAR Distillation for Real-World Image Super-Resolution" (**ICLR 2026**).
 
