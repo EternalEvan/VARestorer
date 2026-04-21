@@ -1,0 +1,71 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+.codex
+
+# Python
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.so
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.nox/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Local environments
+.env
+.env.*
+.venv/
+venv/
+env/
+
+# Secrets / local credentials
+*.pem
+*.key
+*.secret
+
+# Model weights and downloaded third-party assets
+weights/
+*.ckpt
+*.pth
+*.pt
+*.safetensors
+*.bin
+*.msgpack
+
+# Datasets and large local data
+data/
+
+# Training / inference / evaluation artifacts
+local_output/
+wandb/
+visualize/
+result/
+results/
+OSEDiff_results/
+cropped_results/
+runs/
+logs/
+*.log
+events.out.tfevents*
+
+# Temporary outputs commonly produced in this repo
+tmp/
+temp/
+cache/
