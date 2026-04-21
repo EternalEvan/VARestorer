@@ -4,9 +4,14 @@
   <img src="./assets/logo.png" alt="VARestorer Logo" width="400"/>
 </div>
 
-> [Yixuan Zhu](https://eternalevan.github.io/)\*, [Shilin Ma](https://github.com/cyp336/)\*, [Haolin Wang](https://howlin-wang.github.io/), [Ao Li](https://rammusleo.github.io/), Yanzhe Jing, [Yansong Tang](https://andytang15.github.io/)$\dagger$, [Lei Chen](https://andytang15.github.io/), [Jie Zhou](https://scholar.google.com/citations?user=6a79aPwAAAAJ&hl=en&authuser=1), [Jiwen Lu](http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/)
-> 
-> \* Equal contribution &nbsp; $\dagger$ Corresponding author
+<div align="center">
+
+**[Yixuan Zhu\*](https://eternalevan.github.io/), [Shilin Ma\*](https://github.com/cyp336/), [Haolin Wang](https://howlin-wang.github.io/), [Ao Li](https://rammusleo.github.io/), Yanzhe Jing, [Yansong Tang†](https://andytang15.github.io/), [Lei Chen](https://andytang15.github.io/), [Jie Zhou](https://scholar.google.com/citations?user=6a79aPwAAAAJ&hl=en&authuser=1), [Jiwen Lu](http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/)**
+<!-- <br> -->
+(\* Equal contribution &nbsp; † Corresponding author)
+
+Tsinghua University
+</div>
 
 [**[Paper]**](https://openreview.net/pdf?id=T2Oihh7zN8)
 
