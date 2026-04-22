@@ -27,6 +27,22 @@ The repository contains the official implementation for the paper "VARestorer: O
 
 We propose VARestorer, a simple yet effective distillation framework that transforms a pre-trained text-to-image VAR model into a one-step ISR model.
 
+## 🔍 Real-World Restoration at a Glance
+
+<p align="center">
+  <img src="./assets/teaser_car.webp"   alt="Street scene: real input vs. VARestorer" width="32%"/>
+  <img src="./assets/teaser_field.webp" alt="Landscape: real input vs. VARestorer"    width="32%"/>
+  <img src="./assets/teaser_corgi.webp" alt="Corgi portrait: real input vs. VARestorer" width="32%"/>
+</p>
+
+<p align="center">
+  <sub>
+    Left half: <b>real degraded input</b> &nbsp;|&nbsp; Right half: <b>VARestorer</b> one-step output. <br/>
+    Want to drag the divider yourself? &rarr; <a href="https://eternalevan.github.io/VARestorer-project/">Try the interactive slider on the project page</a>.
+  </sub>
+</p>
+
+
 ## 📋 To-Do List
 
 * [x] Release model and inference code.
