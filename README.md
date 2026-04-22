@@ -42,6 +42,14 @@ We propose VARestorer, a simple yet effective distillation framework that transf
   </sub>
 </p>
 
+<div align="center">
+
+| **1 step** | **0.23 s** | **~10&times; faster** | **27.3 M params** |
+| :---: | :---: | :---: | :---: |
+| one-pass inference | per 512&times;512 image | than VAR baseline | trainable (1.2% of total) |
+
+</div>
+
 
 ## 📋 To-Do List
 
