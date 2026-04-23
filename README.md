@@ -81,7 +81,7 @@ pip install --no-build-isolation flash_attn==2.8.3
 
 ### 🗂️ 2. Download Checkpoints
 
-Please download our pretrained [checkpoint](https://drive.google.com/file/d/1NkwlvNfr7nOkN45VWmO-PXbJZ8Nkt2_l/view?usp=drive_link), [flan-t5-xl](https://huggingface.co/google/flan-t5-xl), [swinir](https://huggingface.co/lxq007/DiffBIR/blob/main/general_swinir_v1.ckpt), [infinity_vae](https://huggingface.co/FoundationVision/Infinity/blob/main/infinity_vae_d32reg.pth)  and put them under `./weights`. The file directory should be:
+Please download our pretrained [checkpoint](https://huggingface.co/EvanEternal/VARestorer/tree/main/weights), [flan-t5-xl](https://huggingface.co/google/flan-t5-xl), [swinir](https://huggingface.co/lxq007/DiffBIR/blob/main/general_swinir_v1.ckpt), [infinity_vae](https://huggingface.co/FoundationVision/Infinity/blob/main/infinity_vae_d32reg.pth)  and put them under `./weights`. The file directory should be:
 
 ```
 |-- weights
