@@ -16,7 +16,7 @@
 
 <div align="center">
 
-**[Yixuan Zhu\*](https://eternalevan.github.io/), [Shilin Ma\*](https://github.com/cyp336/), [Haolin Wang](https://howlin-wang.github.io/), [Ao Li](https://rammusleo.github.io/), Yanzhe Jing, [Yansong Tang†](https://andytang15.github.io/), [Lei Chen](https://andytang15.github.io/), [Jie Zhou](https://scholar.google.com/citations?user=6a79aPwAAAAJ&hl=en&authuser=1), [Jiwen Lu](http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/)**
+**[Yixuan Zhu\*](https://eternalevan.github.io/), [Shilin Ma\*](https://github.com/cyp336/), [Haolin Wang](https://howlin-wang.github.io/), [Ao Li](https://rammusleo.github.io/), Yanzhe Jing, [Yansong Tang†](https://andytang15.github.io/), [Lei Chen](https://scholar.google.com/citations?user=8bMh-FQAAAAJ&hl=zh-CN&oi=sra), [Jie Zhou](https://scholar.google.com/citations?user=6a79aPwAAAAJ&hl=en&authuser=1), [Jiwen Lu](http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/)**
 <!-- <br> -->
 (\* Equal contribution &nbsp; † Corresponding author)
 
