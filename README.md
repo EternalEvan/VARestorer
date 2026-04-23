@@ -1,7 +1,7 @@
 # VARestorer: One-Step VAR Distillation for Real-World Image Super-Resolution (ICLR 2026)
 
 <div align="center">
-  <img src="./assets/logo.png" alt="VARestorer Logo" width="400"/>
+  <img src="./assets/logo-new-2.jpg" alt="VARestorer Logo" width="400"/>
   <h3 style="margin-top: 0;">
     📄
     [<a href="https://openreview.net/pdf?id=T2Oihh7zN8" target="_blank">Paper</a>]
