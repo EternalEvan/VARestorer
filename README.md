@@ -10,7 +10,7 @@
     [<a href="https://eternalevan.github.io/VARestorer-project/" target="_blank">Project Page</a>]
     &nbsp;&nbsp;
     🤗
-    [<a href="https://huggingface.co/EternalEvan/VARestorer" target="_blank">Huggingface</a>]
+    [<a href="https://huggingface.co/EvanEternal/VARestorer" target="_blank">Huggingface</a>]
 </h3>
 </div>
 
