@@ -6,7 +6,8 @@
     📄
     [<a href="https://openreview.net/pdf?id=T2Oihh7zN8" target="_blank">Paper</a>]
     &nbsp;&nbsp;
-    [<a href="http://arxiv.org/abs/2604.21450" target="_blank"><img src="https://img.shields.io/badge/arXiv-2604.21450-b31b1b.svg" alt="arXiv" style="vertical-align:middle;"></a>]
+    📝
+    [<a href="http://arxiv.org/abs/2604.21450" target="_blank">arXiv</a>]
     &nbsp;&nbsp;
     🏠
     [<a href="https://eternalevan.github.io/VARestorer-project/" target="_blank">Project Page</a>]
