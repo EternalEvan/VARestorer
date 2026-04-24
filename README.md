@@ -10,7 +10,7 @@
     [<a href="http://arxiv.org/abs/2604.21450" target="_blank">arXiv</a>]
     &nbsp;&nbsp;
     🏠
-    [<a href="https://eternalevan.github.io/VARestorer-project/" target="_blank">Project Page</a>]
+    [<a href="https://eternalevan.github.io/VARestorer-proj/" target="_blank">Project Page</a>]
     &nbsp;&nbsp;
     🤗
     [<a href="https://huggingface.co/EvanEternal/VARestorer" target="_blank">Huggingface</a>]
@@ -41,7 +41,7 @@ We propose VARestorer, a simple yet effective distillation framework that transf
 <p align="center">
   <sub>
     Left half: <b>real degraded input</b> &nbsp;|&nbsp; Right half: <b>VARestorer</b> one-step output. <br/>
-    Want to drag the divider yourself? &rarr; <a href="https://eternalevan.github.io/VARestorer-project/">Try the interactive slider on the project page</a>.
+    Want to drag the divider yourself? &rarr; <a href="https://eternalevan.github.io/VARestorer-proj/">Try the interactive slider on the project page</a>.
   </sub>
 </p>
 
