@@ -306,37 +306,9 @@ class T2IIterableDataset(IterableDataset):
     def total_samples(self):
         return self.samples_div_gpus_workers_batchsize_2batches * self.dataloader_workers * self.num_replicas * self.batch_size
 
-    def get_text_input(self, long_text_input, short_text_input, long_text_type):
-        random_value = self.epoch_global_worker_generator.random()
-        if self.enable_dynamic_length_prompt and long_text_type != 'user_prompt':
-            long_text_elems = [item for item in long_text_input.split('.') if item]
-            if len(long_text_elems):
-                first_sentence_words = [item for item in long_text_elems[0].split(' ') if item]
-            else:
-                first_sentence_words = 0
-            if len(first_sentence_words) >= 15:
-                num_sentence4short_text = 1
-            else:
-                num_sentence4short_text = 2
-            if not short_text_input:
-                short_text_input = '.'.join(long_text_elems[:num_sentence4short_text])
-            if random_value < self.short_prob:
-                return short_text_input
-            if len(long_text_elems) <= num_sentence4short_text:
-                return long_text_input
-            select_sentence_num = self.epoch_global_worker_generator.integers(num_sentence4short_text+1, len(long_text_elems)+1)
-            return '.'.join(long_text_elems[:select_sentence_num])
-        else:
-            if short_text_input and random_value < self.short_prob:
-                return short_text_input
-            return long_text_input
-
     def prepare_model_input(self, data_item) -> Tuple:
         img_path, h_div_w = data_item['image_path'], data_item['h_div_w']
-        short_text_input, long_text_input = data_item['text'], data_item['long_caption']
-        long_text_type = data_item.get('long_caption_type', 'user_prompt')
-        text_input = self.get_text_input(long_text_input, short_text_input, long_text_type)
-        text_input = process_short_text(text_input)
+        text_input = process_short_text(data_item['text'])
 
         h_div_w_template = h_div_w_templates[np.argmin(np.abs(h_div_w - h_div_w_templates))]
         try:
@@ -658,37 +630,9 @@ class SRIterableDataset(IterableDataset):
     def total_samples(self):
         return self.samples_div_gpus_workers_batchsize_2batches * self.dataloader_workers * self.num_replicas * self.batch_size
 
-    def get_text_input(self, long_text_input, short_text_input, long_text_type):
-        random_value = self.epoch_global_worker_generator.random()
-        if self.enable_dynamic_length_prompt and long_text_type != 'user_prompt':
-            long_text_elems = [item for item in long_text_input.split('.') if item]
-            if len(long_text_elems):
-                first_sentence_words = [item for item in long_text_elems[0].split(' ') if item]
-            else:
-                first_sentence_words = 0
-            if len(first_sentence_words) >= 15:
-                num_sentence4short_text = 1
-            else:
-                num_sentence4short_text = 2
-            if not short_text_input:
-                short_text_input = '.'.join(long_text_elems[:num_sentence4short_text])
-            if random_value < self.short_prob:
-                return short_text_input
-            if len(long_text_elems) <= num_sentence4short_text:
-                return long_text_input
-            select_sentence_num = self.epoch_global_worker_generator.integers(num_sentence4short_text+1, len(long_text_elems)+1)
-            return '.'.join(long_text_elems[:select_sentence_num])
-        else:
-            if short_text_input and random_value < self.short_prob:
-                return short_text_input
-            return long_text_input
-
     def prepare_model_input(self, data_item) -> Tuple:
         img_path, h_div_w = data_item['image_path'], data_item['h_div_w']
-        short_text_input, long_text_input = data_item['text'], data_item['long_caption']
-        long_text_type = data_item.get('long_caption_type', 'user_prompt')
-        text_input = self.get_text_input(long_text_input, short_text_input, long_text_type)
-        text_input = process_short_text(text_input)
+        text_input = process_short_text(data_item['text'])
 
         h_div_w_template = h_div_w_templates[np.argmin(np.abs(h_div_w - h_div_w_templates))]
         try:

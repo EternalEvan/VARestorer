@@ -19,3 +19,5 @@ httpx==0.20.0
 opencv-python==4.13.0.92
 pytorch-lightning==2.4.0
 setuptools==80.10.2
+pyiqa
+scipy

@@ -41,7 +41,9 @@ env/
 *.secret
 
 # Model weights and downloaded third-party assets
-weights/
+weights/*
+!weights/.gitkeep
+checkpoints/
 *.ckpt
 *.pth
 *.pt
@@ -49,13 +51,11 @@ weights/
 *.bin
 *.msgpack
 
-# Datasets and large local data
-data/
-
 # Training / inference / evaluation artifacts
 local_output/
 wandb/
 visualize/
+visualize_train/
 result/
 results/
 OSEDiff_results/

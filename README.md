@@ -57,6 +57,7 @@ We propose VARestorer, a simple yet effective distillation framework that transf
 ## 📋 To-Do List
 
 * [x] Release model and inference code.
+* [x] Release training code.
 * [x] Release paper.
 
 
@@ -84,12 +85,13 @@ pip install --no-build-isolation flash_attn==2.8.3
 
 ### 🗂️ 2. Download Checkpoints
 
-Please download our pretrained [checkpoint](https://huggingface.co/EvanEternal/VARestorer/tree/main/weights) (or from [Google Drive](https://drive.google.com/file/d/1NkwlvNfr7nOkN45VWmO-PXbJZ8Nkt2_l/view?usp=drive_link)), [flan-t5-xl](https://huggingface.co/google/flan-t5-xl), [swinir](https://huggingface.co/lxq007/DiffBIR/blob/main/general_swinir_v1.ckpt), [infinity_vae](https://huggingface.co/FoundationVision/Infinity/blob/main/infinity_vae_d32reg.pth) and put them under `./weights`. The file directory should be:
+Please download our pretrained [checkpoint](https://huggingface.co/EvanEternal/VARestorer/tree/main/weights) (or from [Google Drive](https://drive.google.com/file/d/1NkwlvNfr7nOkN45VWmO-PXbJZ8Nkt2_l/view?usp=drive_link)), [flan-t5-xl](https://huggingface.co/google/flan-t5-xl), [swinir](https://huggingface.co/lxq007/DiffBIR/blob/main/general_swinir_v1.ckpt), [infinity_vae](https://huggingface.co/FoundationVision/Infinity/blob/main/infinity_vae_d32reg.pth), [infinity](https://huggingface.co/FoundationVision/Infinity/blob/main/infinity_2b_reg.pth) (required only if you plan to run training) and put them under `./weights`. The file directory should be:
 
 ```
 |-- weights
 |--|-- flan-t5-xl
 |--|-- general_swinir_v1.ckpt
+|--|-- infinity_2b_reg.pth
 |--|-- infinity_vae_d32reg.pth
 |--|-- varestorer.pth
 ...
@@ -106,6 +108,26 @@ bash scripts/infer.sh
 You can use `--tiled` for patch-based inference and use `--sr_scale` to set the super-resolution scale, like 2 or 4. You can set `CUDA_VISIBLE_DEVICES=1` to choose the devices.
 
 The inference process can be done with one Nvidia GeForce RTX 3090 GPU (24GB VRAM). You can use more GPUs by specifying the GPU ids.
+
+### 🏋️ 4. Run Training
+
+Download the LSDIR dataset. The split file is provided at `data/LSDIR/splits/1.000_000084991.jsonl`; before training, update the LSDIR paths inside this JSONL file to point to your local LSDIR dataset. Put the required weights under `weights/`, then launch the training script:
+
+```bash
+bash scripts/train.sh
+```
+
+You can override common paths without editing the script:
+
+```bash
+DATA_PATH=/path/to/LSDIR/splits \
+PRETRAINED_CHECKPOINT_PATH=weights/infinity_2b_reg.pth \
+SWINIR_PATH=weights/general_swinir_v1.ckpt \
+NPROC_PER_NODE=8 \
+bash scripts/train.sh
+```
+
+Training logs are written to `local_output/`, checkpoints to `checkpoints/`.
 
 
 ## 🫰 Acknowledgments
